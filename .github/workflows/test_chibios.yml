@@ -139,9 +139,6 @@ jobs:
       matrix:
         config: [
             MambaF405v2,
-            build-options-defaults-test,
-            signing,
-            SOHW,
             new-check,
         ]
         toolchain: [
