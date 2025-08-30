@@ -188,3 +188,8 @@ jobs:
           Tools/scripts/build_ci.sh
           ccache -s
           ccache -z
+      - name: Upload all build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-${{matrix.config}}-${{ matrix.toolchain }}-gcc${{ matrix.gcc }}
+          path: build/**
