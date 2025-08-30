@@ -139,7 +139,7 @@ jobs:
       matrix:
         config: [
             stm32f7,
-            stm32h7,
+            MambaF405v2,
             fmuv2-plane,
             periph-build,
             iofirmware,
